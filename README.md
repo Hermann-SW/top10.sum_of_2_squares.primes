@@ -32,7 +32,6 @@ S=readvec("sqrtm1.gp")[1]
 XY=readvec("sos.gp")[1]
   ***   last result: cpu time 54 ms, real time 54 ms.
 1
-done, all asserts OK
 hermann@7950x:~/top10.sum_of_2_squares.primes$ 
 ```
 

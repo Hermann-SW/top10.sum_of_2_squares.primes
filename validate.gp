@@ -26,5 +26,3 @@ XY=readvec("sos.gp")[1];
     )
   );
 }
-
-print("done, all asserts OK");

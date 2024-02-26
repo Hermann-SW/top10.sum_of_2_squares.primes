@@ -25,13 +25,17 @@ Not all 10 sum of two squares and sqrt(-1) (mod p) yet ...
 ```
 hermann@7950x:~/top10.sum_of_2_squares.primes$ gp -q < validate.gp 
 P=readvec("top10.gp")[1]
-  ***   last result: cpu time 385 ms, real time 413 ms.
+  ***   last result: cpu time 401 ms, real time 414 ms.
 S=readvec("sqrtm1.gp")[1]
-  ***   last result: cpu time 81 ms, real time 89 ms.
+  ***   last result: cpu time 78 ms, real time 86 ms.
+validation
 11
+  ***   last result: cpu time 362 ms, real time 378 ms.
 XY=readvec("sos.gp")[1]
-  ***   last result: cpu time 54 ms, real time 54 ms.
+  ***   last result: cpu time 59 ms, real time 59 ms.
+validation
 1
+  ***   last result: cpu time 68 ms, real time 80 ms.
 hermann@7950x:~/top10.sum_of_2_squares.primes$ 
 ```
 

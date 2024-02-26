@@ -58,17 +58,17 @@ hermann@7950x:~/top10.sum_of_2_squares.primes$ gp -q < validate.gp
 P=readvec("top10.gp")[1]
   ***   last result: cpu time 0 ms, real time 0 ms.
 conversion
-  ***   last result: cpu time 399 ms, real time 415 ms.
+  ***   last result: cpu time 389 ms, real time 414 ms.
 S=readvec("sqrtm1.gp")[1]
-  ***   last result: cpu time 78 ms, real time 86 ms.
+  ***   last result: cpu time 80 ms, real time 88 ms.
 validation
-11
-  ***   last result: cpu time 360 ms, real time 381 ms.
+1__1______
+  ***   last result: cpu time 366 ms, real time 378 ms.
 XY=readvec("sos.gp")[1]
-  ***   last result: cpu time 55 ms, real time 59 ms.
+  ***   last result: cpu time 54 ms, real time 54 ms.
 validation
-1
-  ***   last result: cpu time 73 ms, real time 81 ms.
+1_________
+  ***   last result: cpu time 72 ms, real time 80 ms.
 hermann@7950x:~/top10.sum_of_2_squares.primes$ 
 ```
 

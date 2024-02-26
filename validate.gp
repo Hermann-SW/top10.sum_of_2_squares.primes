@@ -13,7 +13,8 @@ print("validation");
   for(i=1,#S,s=S[i];
     if(s!=0,
       my(p=P[i]);
-      print1(s^2%p==p-1);
+      print1(s^2%p==p-1),
+      print1("_");
     )
   );
 }
@@ -27,7 +28,8 @@ print("validation");
   for(i=1,#XY,xy=XY[i];
     if(#xy>0,[x,y]=xy;
       my(p=P[i]);
-      print1(x^2+y^2==p);
+      print1(x^2+y^2==p),
+      print1("_");
     )
   );
 }

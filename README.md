@@ -16,7 +16,7 @@
 [7,2,20267500]       \\ 23  7*2^20267500+1                   6101127 L4965 2022
 ]}
 ```
-
+The enclosing angle brackets are for allowing PARI/GP "readvec()" multiline input only.  
 
 Above format is for avoiding difficult parsing in languages other than PARI/GP only.  
 For PARI/GP unchanged entries from list of largest known primes directly work:

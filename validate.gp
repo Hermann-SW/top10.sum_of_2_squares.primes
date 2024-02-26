@@ -9,28 +9,12 @@ print("S=readvec(\"sqrtm1.gp\")[1]");
 S=readvec("sqrtm1.gp")[1];
 ##
 print("validation");
-{
-  for(i=1,#S,s=S[i];
-    if(s!=0,
-      my(p=P[i]);
-      print1(s^2%p==p-1),
-      print1("_");
-    )
-  );
-}
+for(i=1,#S,s=S[i];my(p=P[i]);print1(s^2%p==p-1););
 ##
 
 print("XY=readvec(\"sos.gp\")[1]");
 XY=readvec("sos.gp")[1];
 ##
 print("validation");
-{
-  for(i=1,#XY,xy=XY[i];
-    if(#xy>0,[x,y]=xy;
-      my(p=P[i]);
-      print1(x^2+y^2==p),
-      print1("_");
-    )
-  );
-}
+for(i=1,#XY,xy=XY[i];[x,y]=xy;my(p=P[i]);print1(x^2+y^2==p););
 ##

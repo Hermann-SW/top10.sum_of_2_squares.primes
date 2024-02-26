@@ -48,9 +48,15 @@ Phi(3,-465859^1048576), \\  8          11887192 L4561 2023
 $
 ```
 
-## validation
+## files
 
-Not all 10 sum of two squares and sqrt(-1) (mod p) yet ...
+name|size|what
+----|----|----
+top10.gp|4KB|ith top10 prime
+sqrtm1.gp|47MB|sqrt(-1) (mod p) for ith prime p
+sos.gp|45MB|[x,y] for ith prime =x^2+y^2 (x>y)
+
+## validation
 
 [validate.gp](validate.gp), PARI/GP 
 ```
@@ -58,17 +64,17 @@ hermann@7950x:~/top10.sum_of_2_squares.primes$ gp -q < validate.gp
 P=readvec("top10.gp")[1]
   ***   last result: cpu time 0 ms, real time 0 ms.
 conversion
-  ***   last result: cpu time 381 ms, real time 418 ms.
+  ***   last result: cpu time 355 ms, real time 376 ms.
 S=readvec("sqrtm1.gp")[1]
-  ***   last result: cpu time 288 ms, real time 320 ms.
+  ***   last result: cpu time 346 ms, real time 394 ms.
 validation
-1111____11
-  ***   last result: cpu time 1,616 ms, real time 1,652 ms.
+1111111111
+  ***   last result: cpu time 1,643 ms, real time 1,660 ms.
 XY=readvec("sos.gp")[1]
-  ***   last result: cpu time 227 ms, real time 243 ms.
+  ***   last result: cpu time 266 ms, real time 286 ms.
 validation
-1111____11
-  ***   last result: cpu time 321 ms, real time 325 ms.
+1111111111
+  ***   last result: cpu time 384 ms, real time 391 ms.
 hermann@7950x:~/top10.sum_of_2_squares.primes$ 
 ```
 
@@ -90,10 +96,10 @@ rank|description         |digits    |who  |year|runtime |threads|CPU
 7e|Phi(3,-516693^1048576)|11,981,518|L4561|2023|8.55d   |       |
  8|Phi(3,-465859^1048576)|11,887,192|L4561|2023|6.7d    |6      |7600X
 11|10223*2^31172165+1    |9,383,761 |SB12 |2016|6:33:01h|       |
-15|1963736^1048576+1     |6,598,776 |L4245|2022|1.18d   |       |
-16|1951734^1048576+1     |6,595,985 |L5583|2022|
-17|202705*2^21320516+1   |6,418,121 |L5181|2021|...
-19|1059094^1048576+1     |6,317,602 |L4720|2018|
-21|919444^1048576+1      |6,253,210 |L4286|2017|
-22|81*2^20498148+1       |6,170,560 |L4965|2023|2:16:39h|       |    
+15|1963736^1048576+1     |6,598,776 |L4245|2022|—       |x^2+1
+16|1951734^1048576+1     |6,595,985 |L5583|2022|—       |x^2+1
+17|202705*2^21320516+1   |6,418,121 |L5181|2021|4:09:02h
+19|1059094^1048576+1     |6,317,602 |L4720|2018|—       |x^2+1
+21|919444^1048576+1      |6,253,210 |L4286|2017|—       |x^2+1
+22|81*2^20498148+1       |6,170,560 |L4965|2023|—       |x^2+1
 23|7*2^20267500+1        |6,101,127 |L4965|2022|1:59:20h|       |

@@ -1,5 +1,7 @@
 print("P=readvec(\"top10.gp\")[1]");
 P=readvec("top10.gp")[1];
+##
+print("conversion");
 for(i=1,#P,p=P[i];e=p[2]^p[3];P[i]=if(p[1]==-1,e^2-e+1,p[1]*e+1));
 ##
 

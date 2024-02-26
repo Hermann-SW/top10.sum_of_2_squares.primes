@@ -54,7 +54,7 @@ name|size|what
 ----|----|----
 top10.gp|4KB|ith top10 prime
 sqrtm1.gp|47MB|sqrt(-1) (mod p) for ith prime p
-sos.gp|45MB|[x,y] for ith prime =x^2+y^2 (x>y)
+sos.gp|45MB|[x,y] for ith prime =x^2+y^2 (x>y>0)
 
 ## validation
 

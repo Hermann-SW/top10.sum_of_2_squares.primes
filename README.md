@@ -89,8 +89,10 @@ TODO
 
 ## runtimes
 
-All computations beside the one marked with star were done
-on AMD 7950X CPU, with 16 threads forced onto 8C/16T chiplet0.
+All computations besides the one marked with star were done
+on AMD 7950X CPU, with patched version of LLR 4.0.5 software
+based on (x86 only) gwnum lib, with 16 threads forced onto 8C/16T chiplet0:  
+https://github.com/Hermann-SW/RSA_numbers_factored/tree/main/llr/11%2C981%2C518#855-days-computation  
 Computation for rank 8 was done with 6 threads on AMD 7600X CPU.
 No computation was needed for the 5 primes of form x^2+1.
 

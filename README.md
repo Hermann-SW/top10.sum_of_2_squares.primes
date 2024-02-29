@@ -89,17 +89,19 @@ TODO
 
 ## runtimes
 
-All computations besides the one marked with star were done
-on AMD 7950X CPU, with patched version of LLR 4.0.5 software
-based on (x86 only) gwnum lib, with 16 threads forced onto 8C/16T chiplet0:  
-https://github.com/Hermann-SW/RSA_numbers_factored/tree/main/llr/11%2C981%2C518#855-days-computation  
-Computation for rank 8 was done with 6 threads on AMD 7600X CPU.
-No computation was needed for the 5 primes of form x^2+1.
+Proth prime computations were done on AMD 7950X CPU Ubuntu 22.04 with
+LLR 4.0.5 software of Jean Penné based on (x86 only) gwnum lib, with
+16 threads forced onto 8C/16T chiplet0:  
+http://jpenne.free.fr/index2.html  
+Yves Gallot pointed out that no computation is needed for the 5 primes of form x^2+1:  
+https://mersenneforum.org/showthread.php?p=651245#post651245  
+mersenneforum.org @Neptune showed how to do the Phi(3,_) prime computations superfast:  
+https://mersenneforum.org/showthread.php?p=651488#post651488  
 
 rank|description         |digits    |who  |year|runtime |comment
 ---:|:-------------------|---------:|----:|---:|-------:|------:
-7e|Phi(3,-516693^1048576)|11,981,518|L4561|2023|8.55d   |
- 8|Phi(3,-465859^1048576)|11,887,192|L4561|2023|6.7d    |\*
+7e|Phi(3,-516693^1048576)|11,981,518|L4561|2023|347ms   |
+ 8|Phi(3,-465859^1048576)|11,887,192|L4561|2023|358ms   |
 11|10223*2^31172165+1    |9,383,761 |SB12 |2016|6:33:01h|
 15|1963736^1048576+1     |6,598,776 |L4245|2022|—       |x^2+1
 16|1951734^1048576+1     |6,595,985 |L5583|2022|—       |x^2+1

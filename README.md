@@ -112,7 +112,9 @@ s=b^(e*3/2);
 %19 = 1
 ? s^2%p==p-1
 %20 = 1
-? 
+? ädigits(p)
+%21 = 11981518
+?
 ```
 
 rank|description         |digits    |who  |year|runtime |comment

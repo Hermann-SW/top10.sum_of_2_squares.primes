@@ -97,6 +97,23 @@ Yves Gallot pointed out that no computation is needed for the 5 primes of form x
 https://mersenneforum.org/showthread.php?p=651245#post651245  
 mersenneforum.org @Neptune showed how to do the Phi(3,_) prime computations superfast:  
 https://mersenneforum.org/showthread.php?p=651488#post651488  
+```
+? {
+b=516693;
+e=1048576;
+p=polcyclo(3,-b^e);
+s=b^(e*3/2);
+[M,V]=halfgcd(s,p);
+[x,y]=[V[2],M[2,1]];
+}
+? ##
+  ***   last result: cpu time 347 ms, real time 347 ms.
+? x^2+y^2==p
+%19 = 1
+? s^2%p==p-1
+%20 = 1
+? 
+```
 
 rank|description         |digits    |who  |year|runtime |comment
 ---:|:-------------------|---------:|----:|---:|-------:|------:

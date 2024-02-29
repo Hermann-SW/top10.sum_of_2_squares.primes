@@ -85,7 +85,23 @@ validate.js, Node with BigInt:
 TODO
 
 validate.cc, C++ with libgmpxx:  
-TODO
+
+```
+hermann@7950x:~/top10.sum_of_2_squares.primes$ make clean
+rm -f validate.cc.out
+hermann@7950x:~/top10.sum_of_2_squares.primes$ make validate
+g++ -O3 validate.cc -lgmpxx -lgmp -o validate.cc.out
+./validate.cc.out
+1111111111
+1111111111
+hermann@7950x:~/top10.sum_of_2_squares.primes$ time make validate 2>/dev/null 
+./validate.cc.out
+
+real	0m2.543s
+user	0m2.405s
+sys	0m0.138s
+hermann@7950x:~/top10.sum_of_2_squares.primes$ 
+```
 
 ## runtimes
 

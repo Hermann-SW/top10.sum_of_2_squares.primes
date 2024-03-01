@@ -84,7 +84,7 @@ TODO
 validate.js, Node with BigInt:  
 TODO
 
-validate.cc, C++ with libgmpxx:  
+[validate.cc](validate.cc) ([Makefile](Makefile)), C++ with libgmpxx:  
 
 ```
 hermann@7950x:~/top10.sum_of_2_squares.primes$ make clean
